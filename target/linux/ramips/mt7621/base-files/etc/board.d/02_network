@@ -28,6 +28,7 @@ ramips_setup_interfaces()
 	xiaomi,mi-router-cr6606|\
 	xiaomi,mi-router-cr6608|\
 	xiaomi,mi-router-cr6609|\
+    jcg,q20|\
 	xiaomi,redmi-router-ac2100|\
 	z-router,zr-2660|\
 	zyxel,wsm20)
@@ -94,7 +95,6 @@ ramips_setup_interfaces()
 	glinet,gl-mt1300|\
 	iodata,wn-deax1800gr|\
 	iptime,a3002mesh|\
-	jcg,q20|\
 	lenovo,newifi-d1|\
 	mikrotik,routerboard-m33g|\
 	mts,wg430223|\
@@ -239,6 +239,7 @@ ramips_setup_macs()
 		lan_mac=$wan_mac
 		label_mac=$wan_mac
 		;;
+    jcg,q20|\
 	comfast,cf-e390ax)
 		lan_mac=$(cat /sys/class/net/eth0/address)
 		label_mac=$lan_mac
